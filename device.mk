@@ -177,6 +177,10 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl
 
+# Keymaster HAL
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl
+
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
     persist.audio.dualmic.config=endfire \
@@ -428,6 +432,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGES += \
     power.shamu \
+    android.hardware.power@1.0-impl \
     thermal.shamu
 
 # For android_filesystem_config.h
