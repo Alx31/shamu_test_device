@@ -188,18 +188,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl \
-<<<<<<< HEAD
     android.hardware.broadcastradio@1.0-impl \
     android.hardware.soundtrigger@2.0-impl
 
-# Keymaster HAL
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl
-
-=======
-    android.hardware.soundtrigger@2.0-impl
-
->>>>>>> camcory/O
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
     persist.audio.dualmic.config=endfire \
@@ -408,9 +399,6 @@ else
 PRODUCT_COPY_FILES += \
     device/moto/shamu/init.shamu.diag.rc.user:root/init.shamu.diag.rc
 endif
-
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-impl \
 
 # Enable for volte call
 AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
